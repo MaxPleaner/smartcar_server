@@ -1,0 +1,19 @@
+{
+  "name": "smartcar_server",
+  "version": "1.0.0",
+  "description": "coding challenge",
+  "main": "server.coffee",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/maxpleaner/smartcar_server.git"
+  },
+  "author": "maxpleaner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxpleaner/smartcar_server/issues"
+  },
+  "homepage": "https://github.com/maxpleaner/smartcar_server#readme"
+}

@@ -10,8 +10,8 @@ Installation / Usage:
 4. Run `coffee server.coffee` to start the server on port 1234
   - you can override the port via command line options (i.e. `--port 3000`)
   - you can alternatively use `nodemon server.coffee` (nodemon should be installed globally) to rerun the server when files change
-  -
-Tests are [here](the GM API component](https://github.com/MaxPleaner/smartcar_challenge)
+
+Tests are [here](https://github.com/MaxPleaner/smartcar_challenge)
 
 ## How code is organized
 

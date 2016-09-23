@@ -4,9 +4,9 @@
 
   argv = require('yargs').argv;
 
-  express = require('express');
+  port = argv.port || 1234;
 
-  _ = require('underscore');
+  express = require('express');
 
   bodyParser = require('body-parser');
 
@@ -16,7 +16,7 @@
 
   app.use(bodyParser.urlencoded());
 
-  port = argv.port || 1234;
+  _ = require('underscore');
 
   GM = require("maxp-smartcar-gm").GM;
 

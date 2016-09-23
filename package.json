@@ -2,9 +2,8 @@
   "name": "smartcar_server",
   "version": "1.0.0",
   "description": "coding challenge",
-  "main": "server.coffee",
+  "main": "dist/server.js",
   "scripts": {
-    "test": "jasmine"
   },
   "repository": {
     "type": "git",

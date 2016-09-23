@@ -11,7 +11,7 @@ Installation / Usage:
   - you can override the port via command line options (i.e. `--port 3000`)
   - you can alternatively use `nodemon server.coffee` (nodemon should be installed globally) to rerun the server when files change
 
-Tests are [here](https://github.com/MaxPleaner/smartcar_challenge)
+Tests are done through the node module component, see [here](https://github.com/MaxPleaner/smartcar_challenge)
 
 ## How code is organized
 

@@ -44,7 +44,7 @@ app.get '/vehicles/:id/doors', (req, res) ->
     res.send smartcarResponse
   .catch errFn(res)
 
-# Route to see a vehicle's fuel level
+# Route to see a vehicle's fuel level (will return null if the data isn't available)
 app.get '/vehicles/:id/fuel', (req, res)  ->
   GM.endpoints.getEnergyService(req.params.id)
   .then (GmResponse) ->
@@ -53,14 +53,12 @@ app.get '/vehicles/:id/fuel', (req, res)  ->
     res.send smartcarResponse
   .catch errFn(res)
 
-# Route to see a vehicle's battery level (will return 0 if the data isn't available)
+# Route to see a vehicle's battery level (will return null if the data isn't available)
 app.get '/vehicles/:id/battery', (req, res)  ->
   GM.endpoints.getEnergyService(req.params.id)
   .then (GmResponse) ->
-    parsedVal = Math.round(parseInt GmResponse['data']['batteryLevel']['value'])
     smartcarResponse =
-      # sometimes the GM response is NaN; send 0 in this case
-      percent: if parsedVal then parsedVal else 0
+      percent: Math.round(parseInt GmResponse['data']['batteryLevel']['value'])
     res.send smartcarResponse
   .catch errFn(res)
 

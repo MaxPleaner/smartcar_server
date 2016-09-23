@@ -65,10 +65,9 @@
 
   app.get('/vehicles/:id/battery', function(req, res) {
     return GM.endpoints.getEnergyService(req.params.id).then(function(GmResponse) {
-      var parsedVal, smartcarResponse;
-      parsedVal = Math.round(parseInt(GmResponse['data']['batteryLevel']['value']));
+      var smartcarResponse;
       smartcarResponse = {
-        percent: parsedVal ? parsedVal : 0
+        percent: Math.round(parseInt(GmResponse['data']['batteryLevel']['value']))
       };
       return res.send(smartcarResponse);
     })["catch"](errFn(res));

@@ -12,3 +12,9 @@ Installation / Usage:
   - you can alternatively use `nodemon server.coffee` (nodemon should be installed globally) to rerun the server when files change
   -
 Tests are [here](the GM API component](https://github.com/MaxPleaner/smartcar_challenge)
+
+## How code is organized
+
+- [server.coffee](./server.coffee) is the main server file, which has all the routes.
+- [package.json](./package.json) lists NPM dependencies and makes this component available as a module
+- [compile.sh](./compile.sh) will compile `server.coffee` to `dist/server.js`

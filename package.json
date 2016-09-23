@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/maxpleaner/smartcar_server/issues"
   },
-  "homepage": "https://github.com/maxpleaner/smartcar_server#readme"
+  "homepage": "https://github.com/maxpleaner/smartcar_server#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "underscore": "^1.8.3",
+    "yargs": "^5.0.0"
+  }
 }

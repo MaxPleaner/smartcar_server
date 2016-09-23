@@ -18,7 +18,7 @@
 
   port = argv.port || 1234;
 
-  GM = require("../smartcar/dist/main.js").GM;
+  GM = require("maxp-smartcar-gm").GM;
 
   errFn = function(res) {
     return function(err) {

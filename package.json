@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "coding challenge",
   "main": "dist/server.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/maxpleaner/smartcar_server.git"
@@ -18,6 +17,7 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
+    "maxp-smartcar-gm": "file:///home/max/Downloads/projects/smartcar",
     "underscore": "^1.8.3",
     "yargs": "^5.0.0"
   }
